@@ -1627,9 +1627,6 @@ window.WEDDING_CONFIG = {
     // Hide the tap hint immediately
     if(tapHint) tapHint.classList.add('hidden');
 
-    // 1. Play bell chime synthesizer
-    playChime();
-
     // 2. Play wedding song immediately
     startMusic();
 
@@ -1646,11 +1643,11 @@ window.WEDDING_CONFIG = {
     }
 
     // Safety fallback: if video stalls or takes too long, complete opening
-    setTimeout(() => {
-      if(opening && opening.style.display !== 'none'){
-        completeOpening();
-      }
-    }, 4500);
+    // setTimeout(() => {
+    //   if(opening && opening.style.display !== 'none'){
+    //     completeOpening();
+    //   }
+    // }, 4500);
   }
 
   // Tapping/clicking anywhere on opening screen triggers opening & music
